@@ -81,17 +81,17 @@ WSGI_APPLICATION = 'azure_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
-# DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#    }
-# }
+DATABASES = {
+   'default': {
+       'ENGINE': 'django.db.backends.sqlite3',
+       'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+   }
+}
 
 DATABASES = {
      'default': {
          'ENGINE': 'mssql',
-         'NAME': 'free-sql-db-1173562',
+         'NAME': 'phuripat-sql-db',
          'USER': 'phuripat-admin',
          'PASSWORD': 'Ar@19299',
          'HOST': 'phuripat-sql-server.database.windows.net',
@@ -106,10 +106,10 @@ DATABASES = {
 import urllib.parse
 
 # MongoDB Configuration
-mongo_username = urllib.parse.quote_plus('bearlab')
-mongo_password = urllib.parse.quote_plus('P@ss1234')
+mongo_username = urllib.parse.quote_plus('PhuripatAdmin')
+mongo_password = urllib.parse.quote_plus('Ar@19299')
 # MONGO_URI = 'mongodb://localhost:27017/'
-MONGO_URI = f'mongodb+srv://{mongo_username}:{mongo_password}@bearlab-mongodb.global.mongocluster.cosmos.azure.com/?tls=true&authMechanism=SCRAM-SHA-256&retrywrites=false&maxIdleTimeMS=120000'
+MONGO_URI = f'mongodb+srv://{mongo_username}:{mongo_password}@phuripat-mongodb.global.mongocluster.cosmos.azure.com/?tls=true&authMechanism=SCRAM-SHA-256&retrywrites=false&maxIdleTimeMS=120000'
 MONGO_DB_NAME = 'django_store_reviews'
 
 # Password validation
