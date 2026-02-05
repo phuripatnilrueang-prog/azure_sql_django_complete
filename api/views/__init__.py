@@ -6,7 +6,6 @@ from .stores import StoreList, StoreDetailUpdateDelete, StoreDeleteAll
 from .products import ProductList, ProductDetailUpdateDelete, ProductDeleteAll
 from .users import UserList, UserDetail
 from .orders import OrderList, OrderDetail
-from .orders import OrderList, OrderDetail
 from .reviews import ReviewList, ReviewDetail
 from .db_check import check_db_connection
 
