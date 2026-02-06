@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'xzk$v$q2m1-^3b+^ck!6_hk4gmm$47c8zyzo@-o35spu*+shd$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ["phuripat-frontend-bdctbghaduf5hvaw.japaneast-01.azurewebsites.net"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "https://phuripat-backend-g5d5ezf4c2a3bah4.japaneast-01.azurewebsites.net/api"]
 
 CORS_ALLOW_ALL_ORIGINS = True
 
