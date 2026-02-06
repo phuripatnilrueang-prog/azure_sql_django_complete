@@ -18,3 +18,4 @@ class OrderDetail(generics.RetrieveUpdateDestroyAPIView):
     # API view to retrieve, update, and delete orders
     queryset = Order.objects.all()
     serializer_class = OrderSerializer
+    
