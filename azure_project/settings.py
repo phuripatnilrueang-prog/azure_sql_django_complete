@@ -25,7 +25,7 @@ SECRET_KEY = 'xzk$v$q2m1-^3b+^ck!6_hk4gmm$47c8zyzo@-o35spu*+shd$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1", "https://phuripat-frontend-bdctbghaduf5hvaw.japaneast-01.azurewebsites.net/"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "https://phuripat-frontend-bdctbghaduf5hvaw.japanwest-01.azurewebsites.net"]
 
 CORS_ALLOW_ALL_ORIGINS = True
 
