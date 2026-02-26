@@ -1,11 +1,8 @@
 from django.contrib import admin
 from django.urls import path, include
-from . import views
-from .views import home
 
 # API URL patterns
 urlpatterns = [
-    path('', home),
     path('admin/', admin.site.urls),
     path('api/', include('api.urls')),   
     path('stores/', views.StoreList.as_view(), name='store-list'),
