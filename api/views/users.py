@@ -14,3 +14,8 @@ class UserDetail(generics.RetrieveUpdateDestroyAPIView):
     # API view to retrieve, update or delete a user instance
     queryset = User.objects.all()
     serializer_class = UserSerializer
+
+class UserDeleteAll(generics.DestroyAPIView):
+    # API view to delete a user instance
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
