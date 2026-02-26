@@ -104,3 +104,14 @@ class ReviewDetail(APIView):
         if result.deleted_count > 0:
             return response.Response(status=status.HTTP_204_NO_CONTENT)
         return response.Response(status=status.HTTP_404_NOT_FOUND)
+
+class ReviewDeleteAll(APIView):
+    # API view to delete all reviews from MongoDB
+    
+    def delete(self, request):
+        db = get_db_handle()
+        collection = db['reviews']
+        
+        collection.delete_many({})
+        
+        return response.Response(status=status.HTTP_204_NO_CONTENT)
