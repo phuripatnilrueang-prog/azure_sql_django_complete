@@ -20,11 +20,4 @@ class OrderDetail(generics.RetrieveUpdateDestroyAPIView):
     # API view to retrieve, update, and delete orders
     queryset = Order.objects.all()
     serializer_class = OrderSerializer
-
-class OrderDeleteAll(generics.DestroyAPIView):
-    # API view to delete all orders
-    def delete(self, request, *args, **kwargs):
-        # Delete all Order objects
-        Order.objects.all().delete()
-        return Response(status=status.HTTP_204_NO_CONTENT)
     
