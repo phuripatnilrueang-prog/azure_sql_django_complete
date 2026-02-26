@@ -14,7 +14,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('api.urls')),
     path('', api_root),
-    path('users/',        views.UserList.as_view(),     name='user-list'),
-    path('users/<int:pk>/', views.UserDetail.as_view(), name='user-detail'),
-    path('users/deleteAll/', views.UserDeleteAll.as_view(), name='user_delete_all'),
 ]
